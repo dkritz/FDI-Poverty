@@ -1,0 +1,177 @@
+select Country_Name,
+    2010 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2010 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2010 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2010 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2010 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2010 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2010 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2010 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2010 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2010 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2011 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2011 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2011 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2011 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2011 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2011 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2011 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2011 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2011 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2011 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2012 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2012 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2012 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2012 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2012 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2012 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2012 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2012 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2012 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2012 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2013 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2013 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2013 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2013 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2013 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2013 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2013 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2013 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2013 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2013 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2014 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2014 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2014 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2014 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2014 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2014 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2014 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2014 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2014 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2014 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2015 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2015 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2015 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2015 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2015 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2015 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2015 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2015 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2015 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2015 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2016 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2016 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2016 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2016 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2016 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2016 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2016 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2016 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2016 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2016 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2017 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2017 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2017 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2017 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2017 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2017 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2017 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2017 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2017 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2017 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2018 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2018 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2018 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2018 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2017 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2018 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2018 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2018 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2018 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2018 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
+
+union all
+
+select Country_Name,
+    2019 as Year,
+    sum(case when Series_Name = 'Net official development assistance and official aid received (current US$)' then YR2019 else 0 end) as net_aid,
+    sum(case when Series_Name = 'Foreign direct investment, net inflows (% of GDP)' then YR2019 else 0 end) as fdi_inflows,
+    sum(case when Series_Name = 'Adjusted net national income (current US$)' then YR2019 else 0 end) as nni,
+    sum(case when Series_Name = 'Inflation, GDP deflator (annual %)' then YR2019 else 0 end) as inflation,
+    sum(case when Series_Name = 'Domestic credit provided by financial sector (% of GDP)' then YR2019 else 0 end) as credit,
+    sum(case when Series_Name = 'Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)' then YR2019 else 0 end) as poverty_ratio,
+    sum(case when Series_Name = 'Gross intake ratio in first grade of primary education, total (% of relevant age group)' then YR2019 else 0 end) as education,
+    sum(case when Series_Name = 'Poverty gap at $1.90 a day (2011 PPP) (%)' then YR2019 else 0 end) as poverty_gap,
+    sum(case when Series_Name = 'CPIA public sector management and institutions cluster average (1=low to 6=high)' then YR2019 else 0 end) as bureaucracy
+from adsurgdb.africa
+where Series_Name <> 'Series Name'
+	and Country_Name <> ''
+group by Country_Name
