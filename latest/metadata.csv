@@ -1,0 +1,12 @@
+code,series_name,source_name,source_url
+trade_free,"Index of Economic Freedom: Trade Freedom component (0-100, least to greatest freedom)","Heritage Foundation, Index of Economic Freedom",http://www.heritage.org/index/
+pov_190,"Legatum Prosperity Index: Living Conditions Pillar, Material Resources: Poverty rate at $1.90 a day, raw value (percentage of population)","Legatum Institute, Legatum Prosperity Index",http://www.prosperity.com/
+pov_320,"Legatum Prosperity Index: Living Conditions Pillar, Material Resources: Poverty rate at $3.20 a day, raw value (percentage of population)","Legatum Institute, Legatum Prosperity Index",http://www.prosperity.com/
+pov_550,"Legatum Prosperity Index: Living Conditions Pillar, Material Resources: Poverty rate at $5.50 a day, raw value (percentage of population)","Legatum Institute, Legatum Prosperity Index",http://www.prosperity.com/
+pov_line,"Legatum Prosperity Index: Living Conditions Pillar, Material Resources: Poverty rate at national poverty lines, raw value (percentage of population)","Legatum Institute, Legatum Prosperity Index",http://www.prosperity.com/
+inst,Country Policy and Institutional Assessment (CPIA): public sector management and institutions cluster average (1=low to 6=high),"World Bank, World Development Indicators (WDI)",http://data.worldbank.org/data-catalog/world-development-indicators
+gdp,Adjusted net national income (current $US),"World Bank, World Development Indicators (WDI)",http://data.worldbank.org/data-catalog/world-development-indicators
+inflation,"Inflation, GDP deflator (annual percentage)","World Bank, World Development Indicators (WDI)",http://data.worldbank.org/data-catalog/world-development-indicators
+credit,Domestic credit provided by financial sector (percentage of GDP),"World Bank, World Development Indicators (WDI)",http://data.worldbank.org/data-catalog/world-development-indicators
+edu,"Gross intake ratio to Grade 1 of primary education, both sexes (percentage)","World Bank, World Development Indicators (WDI)",http://data.worldbank.org/data-catalog/world-development-indicators
+fdi,"U.S. Direct Investment Abroad: Direct investment position ($US millions, historical-cost basis)","U.S. Department of Commerce, Bureau of Economic Analysis (DOC/BEA), U.S. Direct Investment Abroad",http://www.bea.gov/international/di1usdbal.htm

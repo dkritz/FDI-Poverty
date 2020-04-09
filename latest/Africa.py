@@ -9,6 +9,11 @@ df = pd.read_csv("individual african countries 3Jan20.txt",sep='\t')
 data = df.set_index(['Ctry','year'])
 
 mod1 = PanelOLS(data.PovertyGap, data[['Credit','Education','Inflation','Institutions','lnFDI','lnGDP']], entity_effects=True)
+#mod1 = PanelOLS(data.PovertyGap,
+#    data[['Credit','Education','Inflation','Institutions','lnFDI','lnGDP']],
+#    entity_effects=True,
+#    time_effects=True
+#    )
 res1 = mod1.fit(cov_type='clustered', cluster_entity=True)
 
 mod2 = PanelOLS(data.PovertyGap, data[['Credit','Education','Inflation','Institutions','lnFDI','lnGDP','lnODA']], entity_effects=True)
